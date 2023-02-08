@@ -2,7 +2,7 @@ package arithmetic
 
 type Adpater struct{}
 
-func NewArithmetic() *Adpater {
+func NewAdapter() *Adpater {
 	return &Adpater{}
 }
 

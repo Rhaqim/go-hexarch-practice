@@ -4,10 +4,10 @@ import "github.com/Rhaqim/hexarch/internal/ports"
 
 type Adpater struct {
 	db    ports.DBPort
-	Arith ports.ArthmeticPort
+	Arith ports.ArithmeticPort
 }
 
-func NewAdapter(db ports.DBPort, arith ports.ArthmeticPort) *Adpater {
+func NewAdapter(db ports.DBPort, arith ports.ArithmeticPort) *Adpater {
 	return &Adpater{
 		db:    db,
 		Arith: arith,

@@ -1,6 +1,6 @@
 package ports
 
-type ArthmeticPort interface {
+type ArithmeticPort interface {
 	Add(a, b int) (int32, error)
 	Sub(a, b int) (int32, error)
 	Mul(a, b int) (int32, error)
