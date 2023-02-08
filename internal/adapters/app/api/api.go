@@ -21,6 +21,8 @@ func (apia Adpater) GetAddition(a, b int) (int32, error) {
 		return 0, err
 	}
 
+	apia.db.AddtoHistory(result, "Addition")
+
 	return result, nil
 }
 
@@ -30,6 +32,8 @@ func (apia Adpater) GetSubtraction(a, b int) (int32, error) {
 	if err != nil {
 		return 0, err
 	}
+
+	apia.db.AddtoHistory(result, "Subtraction")
 
 	return result, nil
 }
@@ -41,6 +45,8 @@ func (apia Adpater) GetMultiplication(a, b int) (int32, error) {
 		return 0, err
 	}
 
+	apia.db.AddtoHistory(result, "Multiplication")
+
 	return result, nil
 }
 
@@ -50,6 +56,8 @@ func (apia Adpater) GetDivision(a, b int) (int32, error) {
 	if err != nil {
 		return 0, err
 	}
+
+	apia.db.AddtoHistory(result, "Division")
 
 	return result, nil
 }
