@@ -13,3 +13,11 @@ type GRPCPort interface {
 	GetMultiplication(ctx context.Context, req *pb.OperationParams) (*pb.Answer, error)
 	GetDivision(ctx context.Context, req *pb.OperationParams) (*pb.Answer, error)
 }
+
+type HTTPPort interface {
+	Run()
+	GetAddition(ctx context.Context, req *pb.OperationParams) (*pb.Answer, error)
+	GetSubtraction(ctx context.Context, req *pb.OperationParams) (*pb.Answer, error)
+	GetMultiplication(ctx context.Context, req *pb.OperationParams) (*pb.Answer, error)
+	GetDivision(ctx context.Context, req *pb.OperationParams) (*pb.Answer, error)
+}
